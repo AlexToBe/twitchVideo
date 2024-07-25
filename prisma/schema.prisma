@@ -64,7 +64,7 @@ model Stream {
   thumbnaiUrl         String?
   serverUrl           String?
   streamKey           String?
-  ingressId           String?
+  ingressId           String? @unique
   isLive              Boolean @default(false)
   isChatEnabled       Boolean @default(false)
   isChatDelayd        Boolean @default(false)
